@@ -79,10 +79,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans  &trans    &kp UP          &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &kp N0     &trans
-&trans     &trans  &kp LEFT  &kp DOWN        &kp RIGHT  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&kp LCTRL  &trans  &trans    &trans          &trans     &trans    &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
-                             &kp LEFT_SHIFT  &trans     &trans    &trans  &trans  &trans
+&trans     &trans  &trans    &kp UP          &trans     &trans              &trans             &kp N7  &kp N8  &kp N9  &kp N0     &trans
+&trans     &trans  &kp LEFT  &kp DOWN        &kp RIGHT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&kp LCTRL  &trans  &trans    &trans          &trans     &trans              &trans             &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+                             &kp LEFT_SHIFT  &trans     &trans              &trans             &trans  &trans
             >;
         };
 
@@ -94,9 +94,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp F1  &kp F2   &kp F3   &kp F4   &trans          &trans  &kp INSERT  &kp HOME          &kp PAGE_UP    &trans  &trans
-&bt BT_CLR  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 0    &trans  &kp DELETE  &kp END           &kp PAGE_DOWN  &trans  &trans
-&trans      &kp F9  &kp F10  &kp F11  &kp F12  &trans          &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_FORWARD  &trans  &trans
+&trans      &kp F1  &kp F2   &kp F3   &kp F4   &trans          &trans  &kp INSERT  &kp HOME          &kp PAGE_UP    &kp C_VOLUME_UP    &trans
+&bt BT_CLR  &kp F5  &kp F6   &kp F7   &kp F8   &bt BT_SEL 0    &trans  &kp DELETE  &kp END           &kp PAGE_DOWN  &kp C_VOLUME_DOWN  &trans
+&trans      &kp F9  &kp F10  &kp F11  &kp F12  &trans          &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_FORWARD  &kp K_MUTE         &trans
                              &trans   &trans   &trans          &trans  &trans      &trans
             >;
         };
