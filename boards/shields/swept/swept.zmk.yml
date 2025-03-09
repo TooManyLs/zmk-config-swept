@@ -1,0 +1,15 @@
+file_format: "1"
+id: swept
+name: Swept
+type: shield
+url: https://github.com/TooManyLs/zmk-config-swept
+requires: [pro_micro]
+exposes:
+  - i2c_oled
+features:
+  - keys
+  - display
+siblings:
+  - swept_left
+  - swept_right
+  - swept_dongle
