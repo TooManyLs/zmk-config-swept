@@ -65,7 +65,7 @@
 
             bindings = <
 &mt ESCAPE GRAVE  &kp Q              &kp W         &kp E            &kp R            &kp T        &kp Y    &kp U             &kp I             &kp O         &kp P                       &kp LEFT_BRACKET
-&kp GRAVE         &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_WIN F  &kp G        &kp H    &hmr RIGHT_WIN J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
+&kp TAB           &hml LEFT_SHIFT A  &hml LCTRL S  &hml LEFT_ALT D  &hml LEFT_WIN F  &kp G        &kp H    &hmr RIGHT_WIN J  &hmr RIGHT_ALT K  &hmr RCTRL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT
 &kp LSHFT         &kp Z              &kp X         &kp C            &kp V            &kp B        &kp N    &kp M             &kp COMMA         &kp DOT       &mt BACKSLASH SLASH         &kp RIGHT_BRACKET
                                                    &none            &lt 2 LEFT_WIN   &kp SPACE    &kp RET  &lt 1 BACKSPACE   &key_repeat
             >;
