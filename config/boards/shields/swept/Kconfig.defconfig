@@ -1,0 +1,16 @@
+if SHIELD_SWEPT_CENTRAL_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Swept"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SWEPT_CENTRAL_DONGLE || SHIELD_SWEPT_PERIPHERAL_LEFT || SHIELD_SWEPT_PERIPHERAL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
