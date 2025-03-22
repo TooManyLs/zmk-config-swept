@@ -1,4 +1,4 @@
-if SHIELD_SWEPT_CENTRAL_DONGLE
+if SHIELD_SWEPT_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Swept"
@@ -6,11 +6,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
-if SHIELD_SWEPT_CENTRAL_DONGLE || SHIELD_SWEPT_PERIPHERAL_LEFT || SHIELD_SWEPT_PERIPHERAL_RIGHT
+if SHIELD_SWEPT_DONGLE || SHIELD_SWEPT_LEFT || SHIELD_SWEPT_RIGHT
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif
