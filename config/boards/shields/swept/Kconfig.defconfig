@@ -26,6 +26,9 @@ endif
 
 if SHIELD_SWEPT_LEFT || SHIELD_SWEPT_RIGHT
 
+config ZMK_DISPLAY
+	default y
+
 if ZMK_DISPLAY
 
 config I2C
