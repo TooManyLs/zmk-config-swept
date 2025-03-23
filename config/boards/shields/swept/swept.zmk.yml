@@ -7,6 +7,7 @@ requires: [pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
+  - display
 siblings:
   - swept_left
   - swept_right
