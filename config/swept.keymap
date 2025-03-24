@@ -85,10 +85,10 @@
             //                    |SHFT |     |     |   |     |     |     |
 
             bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &trans     &trans              &trans             &kp N7  &kp N8  &kp N9  &kp N0     &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &trans  &trans          &trans          &trans     &trans              &trans             &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
-                                &kp LCTRL       &trans     &kp LSHFT           &trans             &trans  &trans
+&kp EXCL   &kp DOLLAR   &trans          &kp UP_ARROW    &kp AMPERSAND         &kp ASTERISK             &trans             &kp N7  &kp N8  &kp N9  &kp N0     &trans
+&kp AT     &kp PERCENT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT             &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&kp POUND  &kp CARET    &kp UNDERSCORE  &kp PLUS        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans             &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+                                        &kp LCTRL       &trans                &kp LSHFT                &trans             &trans  &trans
             >;
         };
 
