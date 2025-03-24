@@ -31,11 +31,6 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <9 10 11>;
         };
-
-        both {
-            bindings = <&to 3>;
-            key-positions = <37 40 14>;
-        };
     };
 
     behaviors {
@@ -120,6 +115,15 @@
 &trans  &trans  &trans          &trans          &trans           &trans    &trans  &trans          &trans        &trans           &trans  &trans
                                 &trans          &trans           &trans    &trans  &trans          &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        both {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
