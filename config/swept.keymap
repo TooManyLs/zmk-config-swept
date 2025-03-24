@@ -25,6 +25,11 @@
             bindings = <&kp DELETE>;
             key-positions = <32 33>;
         };
+
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <9 10 11>;
+        };
     };
 
     behaviors {
