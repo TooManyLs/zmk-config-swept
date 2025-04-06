@@ -32,6 +32,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <9 10 11>;
         };
+
+        gaming_layer {
+            bindings = <&tog 4>;
+            key-positions = <23 11 35>;
+        };
     };
 
     behaviors {
@@ -118,6 +123,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &out OUT_TOG    &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &trans  &trans
 &trans      &trans        &trans        &trans        &trans  &trans          &trans  &trans          &trans        &trans           &trans  &trans
                                         &trans        &trans  &trans          &trans  &trans          &trans
+            >;
+        };
+
+        gayming {
+            bindings = <
+&kp TAB         &kp Q  &kp W  &kp E           &kp R      &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &kp LBKT
+&kp LCTRL       &kp A  &kp S  &kp D           &kp F      &kp G        &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C           &kp V      &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                              &lt 1 LEFT_ALT  &kp SPACE  &kp SPACE    &kp RET  &kp BSPC  &trans
             >;
         };
     };
