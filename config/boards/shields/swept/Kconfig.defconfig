@@ -22,6 +22,11 @@ config ZMK_SPLIT
 config ZMK_BLE
 	default y
 	
+config BT_CTLR_TX_PWR_PLUS_8
+    default y
+config BT_CTLR_PHY_2M
+    default n
+
 endif
 
 if SHIELD_SWEPT_LEFT || SHIELD_SWEPT_RIGHT
