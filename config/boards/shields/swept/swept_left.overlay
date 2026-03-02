@@ -5,6 +5,7 @@
  */
 
 #include "swept.dtsi"
+#include "swept_common.dtsi"
 
 &kscan0 {
 	col-gpios

@@ -5,11 +5,12 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "swept_common.dtsi"
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,matrix_transform = &default_transform;
+        zmk,matrix_transform = &mock_transform;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -19,7 +20,7 @@
         events = <0>;
     };
 	
-	default_transform: keymap_transform_0 {
+	mock_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
 		rows = <4>;
@@ -34,4 +35,12 @@
 							RC(3,3) RC(3,4) RC(3,5)  RC(3,6) RC(3,7) RC(3,8)
 		>;
 	};
+};
+
+&tps43_split {
+    status = "disabled";
+};
+
+&tps43_listener {
+    status = "okay";
 };

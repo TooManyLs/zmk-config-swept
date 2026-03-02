@@ -5,6 +5,7 @@
  */
 
 #include "swept.dtsi"
+#include "swept_common.dtsi"
 
 &default_transform {
 	col-offset = <6>;

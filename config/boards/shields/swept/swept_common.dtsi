@@ -1,0 +1,18 @@
+/{
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        tps43_split: tps43_split@74 {
+            compatible = "zmk,input-split";
+            reg = <0x74>;
+        };
+    };
+ 
+	tps43_listener: tps43_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&tps43_split>;
+    };
+
+};
