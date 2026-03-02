@@ -9,15 +9,7 @@
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;
         zmk,matrix_transform = &mock_transform;
-    };
-
-    mock_kscan: mock_kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
     };
 	
 	mock_transform: keymap_transform_0 {
