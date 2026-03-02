@@ -21,7 +21,3 @@
 &pro_micro_i2c {
     status = "disabled";
 };
-
-&tps43_split {
-    status = "disabled";
-};
