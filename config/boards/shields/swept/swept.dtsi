@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "swept_common.dtsi"
 
 / {
 
@@ -58,25 +59,11 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
 			;
 		
 	};
-
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        tps43_split: tps43_split@74 {
-            compatible = "zmk,input-split";
-            reg = <0x74>;
-        };
-    };
- 
-	tps43_listener: tps43_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&tps43_split>;
-    };
-
+};
+&tps43_split {
+	status = "okay";
 };
 
 &tps43_listener {
-    status = "okay";
+    status = "disabled";
 };

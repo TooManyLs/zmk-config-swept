@@ -47,6 +47,10 @@
     };
 };
 
+&tps43_listener {
+    status = "disabled";
+};
+
 &tps43_split {
     device = <&tps43>;
 
