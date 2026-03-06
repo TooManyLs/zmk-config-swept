@@ -39,7 +39,7 @@
          */
         one-finger-tap;
         press-and-hold;
-        press-and-hold-time = <250>;
+        press-and-hold-time = <180>;
         two-finger-tap;
 
         scroll;
